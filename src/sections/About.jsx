@@ -1,3 +1,42 @@
 export const About = () => {
-  return <section></section>
-}
+  return (
+    <section id="about" className="py-32 relative overflow-hidden">
+      <div className="container mx-auto px-6 relative z-10">
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+          {/* Left Column */}
+          <div className="space-y-8">
+            <div className="animate-fade-in">
+              <span className="text-secondary-foreground text-sm font-medium traking-wider upper-case">
+                {" "}
+                About Me
+              </span>
+            </div>
+          </div>
+          <h2 className="text-4xl md:text-5xl font-bold leading-tight animate-fade-in animation-delay-100 text-white">
+            Passionate Software Developer & Tech Creator
+          </h2>
+          <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200">
+            <p>
+              I'm a passionate software engineer with over 5 years of experience
+              crafting digital products that make a difference. My journey
+              started with a curiosity for how things work on the web, and it
+              has evolved into a deep expertise in modern frontend technologies.
+            </p>
+            <p>
+              I specialize in React, Next.js, and TypeScript, building
+              everything from sleek landing pages to complex enterprise
+              applications. My approach combines technical excellence with a
+              keen eye for design and user experience.
+            </p>
+            <p>
+              When I'm not coding, you'll find me exploring new technologies,
+              contributing to open-source projects, or sharing knowledge with
+              the developer community.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  );
+};
