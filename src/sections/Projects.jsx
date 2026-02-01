@@ -1,3 +1,5 @@
+import { Github } from "lucide-react";
+
 const projects = [
   {
     title: "E-Commerce Platform",
@@ -67,7 +69,20 @@ export const Projects = () => {
                   alt={project.title}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
-              </div>
+                <div className="absolute inset-0
+                bg-gradient-to-t from-card via-card/50
+                 to-transparent opacity-60"/>
+
+                 {/* Overlay Link */}
+                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <a
+                    href={project.github}
+                    className="p-4 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all"
+                  >
+                    <Github className="w-5 h-5" />
+                  </a>
+                </div>
+              </div >
             </div>
           ))}
         </div>
