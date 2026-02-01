@@ -54,12 +54,19 @@ export const Projects = () => {
         </div>
 
         {/* Projects Grid */}
-        <div>
+        <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, idx) => (
-            <div key={idx}>
-            {/* Image */}
-              <div>
-              <img src={project.image} alt={project.title}/>
+            <div
+              key={idx}
+              className="group glass rounded-2xl overflow-hidden animate-fade-in md:row-span-1"
+            >
+              {/* Image */}
+              <div className="relative overflow-hidden aspect-video">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
               </div>
             </div>
           ))}
