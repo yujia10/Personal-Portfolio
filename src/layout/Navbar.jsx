@@ -6,11 +6,11 @@ const navLinks = [
   { href: "#about", label: "About" },
   { href: "#skills", label: "Skills" },
   { href: "#projects", label: "Projects" },
-  { href: "#contat", label: "Contact" },
+  { href: "#contact", label: "Contact" },
 ];
 
 export const Navbar = () => {
-  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -51,13 +51,13 @@ export const Navbar = () => {
         </div>
         {/* CTA button*/}
         <div className="hidden md:block">
-          <Button size="sm">Contact Me</Button>
+          <a href="#contact"><Button size="sm">Contact Me</Button></a>
         </div>
 
         {/* Mobile Menu button*/}
         <button
           className="md:hidden p-2 text-foreground cursor-pointer"
-          onClick={() => setMobileMenuOpen((prev) => !prev)}
+          onClick={() => setIsMobileMenuOpen((prev) => !prev)}
         >
           {isMobileMenuOpen ? <X size={24}/> : <Menu size={24} />}
         </button>
@@ -71,12 +71,13 @@ export const Navbar = () => {
               <a
                 href={link.href}
                 key={index}
+                onClick={() => setIsMobileMenuOpen(false)}
                 className="text-lg text-muted-foreground hover:text-foreground py-2"
               >
                 {link.label}
               </a>
             ))}
-            <Button>Contact Me</Button>
+            <a href="#contact"><Button onClick={() => setIsMobileMenuOpen(false)}>Contact Me</Button></a>
           </div>
         </div>
       )}

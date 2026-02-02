@@ -52,27 +52,29 @@ export const Hero = () => {
 
           {/* CTA */}
           <div className="pt-4 opacity-0 animate-fade-in-delay-4">
-            <Button size="sm">
-              <a href="#projects">View My Work</a>
-            </Button>
+            <a href="#projects">
+              <Button size="sm">View My Work</Button>
+            </a>
           </div>
 
           {/* Social Links */}
           <div className="flex items-center justify-center gap-4 animate-fade-in animation-delay-400">
-              <span className="text-sm text-muted-foreground">Connect With Me: </span>
-              {[
-                { icon: Github, href: "https://github.com/yujia10" },
-                { icon: Linkedin, href: "https://www.linkedin.com/in/yujia-gu" },
-              ].map((social, idx) => (
-                <a
-                  key={idx}
-                  href={social.href}
-                  className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300"
-                >
-                  {<social.icon className="w-5 h-5" />}
-                </a>
-              ))}
-            </div>
+            <span className="text-sm text-muted-foreground">
+              Connect With Me:{" "}
+            </span>
+            {[
+              { icon: Github, href: "https://github.com/yujia10" },
+              { icon: Linkedin, href: "https://www.linkedin.com/in/yujia-gu" },
+            ].map((social, idx) => (
+              <a
+                key={idx}
+                href={social.href}
+                className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300"
+              >
+                {<social.icon className="w-5 h-5" />}
+              </a>
+            ))}
+          </div>
         </div>
       </div>
 
