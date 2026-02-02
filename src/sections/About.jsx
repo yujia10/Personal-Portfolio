@@ -29,7 +29,7 @@ export const About = () => {
           {/* Left Column */}
           <div className="space-y-8">
             <div className="animate-fade-in">
-              <span className="text-secondary-foreground font-bold text-xl md:text-2xl traking-wider upper-case">
+              <span className="text-secondary-foreground text-sm font-medium tracking-wider uppercase animate-fade-in">
                 {" "}
                 About Me
               </span>

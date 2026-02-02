@@ -59,7 +59,7 @@ export const Hero = () => {
 
           {/* Social Links */}
           <div className="flex items-center justify-center gap-4 animate-fade-in animation-delay-400">
-              <span className="text-sm text-muted-foreground">Follow me: </span>
+              <span className="text-sm text-muted-foreground">Connect With Me: </span>
               {[
                 { icon: Github, href: "https://github.com/yujia10" },
                 { icon: Linkedin, href: "https://www.linkedin.com/in/yujia-gu" },
