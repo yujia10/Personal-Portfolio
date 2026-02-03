@@ -35,8 +35,11 @@ export const About = () => {
               </span>
             </div>
 
-            <h2 className="text-3xl md:text-4xl leading-tight animate-fade-in animation-delay-100 text-white">
-              Passionate Software Developer & Tech Creator
+            <h2 className="text-4xl md:text-5xl font-bold leading-tight animate-fade-in animation-delay-100 text-secondary-foreground">
+              Software developer{" "}
+              <span className="font-serif italic font-normal text-white">
+                & tech creator
+              </span>
             </h2>
             <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200">
               <p>
